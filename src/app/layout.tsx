@@ -3,12 +3,17 @@ import '@/styles/globals.css';
 import type { Metadata } from 'next';
 import { ThemeProvider } from 'next-themes';
 
-import { fontSans } from '@/fonts';
+import { fontSans, redHatText } from '@/fonts';
 import { cn } from '@/lib/utils';
 
 export const metadata: Metadata = {
-  title: 'New Next.js Project',
-  description: 'Created by Rashid Shamloo',
+  title: 'Launch countdown timer by Rashid Shamloo',
+  description: 'Challenge by Frontend Mentor. Coded by Rashid Shamloo.',
+  icons: {
+    icon: [
+      { rel: 'icon', url: '/images/favicon-32x32.png', type: 'image/png' },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -20,8 +25,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'bg-background min-h-screen font-sans antialiased',
+          'bg-background dark min-h-screen bg-[url(/images/pattern-hills.svg),url(/images/bg-stars.svg)] bg-contain bg-[position:bottom,top] bg-no-repeat font-sans antialiased',
           fontSans.variable,
+          redHatText.variable,
         )}
       >
         <ThemeProvider attribute="class">{children}</ThemeProvider>

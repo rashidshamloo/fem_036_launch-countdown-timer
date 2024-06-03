@@ -21,6 +21,7 @@ const config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-sans)', ...fontFamily.sans],
+        redhattext: ['var(--redhattext)'],
       },
       colors: {
         border: 'hsl(var(--border))',
