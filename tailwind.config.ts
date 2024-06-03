@@ -56,6 +56,12 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        // project specific colors
+        grayishBlue: 'hsl(237, 18%, 59%)',
+        softRed: 'hsl(345, 95%, 68%)',
+        darkDesaturatedBlue: 'hsl(236, 21%, 26%)',
+        veryDarkBlue: 'hsl(235, 16%, 14%)',
+        veryDarkBlackBlue: 'hsl(234, 17%, 12%)',
       },
       borderRadius: {
         lg: 'var(--radius)',
